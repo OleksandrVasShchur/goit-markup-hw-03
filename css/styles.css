@@ -1,0 +1,366 @@
+/* ==============Baze================= */
+
+body {
+  margin: 0;
+  font-family: Roboto, sans-serif;
+  color: #2e2f42;
+  font-size: 16px;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.list {
+  list-style: none;
+}
+
+.decor {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  width: 1158px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  /* background-color: aqua; */
+}
+/* ==============/Baze================= */
+
+/* ============== Components============*/
+:root {
+  --main-color-text: #434455;
+  --primary-brand: #4d5ae5;
+  --universal-color: #2e2f42;
+  --subakcent-color: #f4f4fd;
+  --color-secondary: #ffffff;
+  --color-fon: #f4f4fd;
+  --color-decor: #e7e9fc;
+}
+
+/* ============== /Components============*/
+
+/* --------логотип і навігація--------- */
+
+.logo-web {
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  line-height: 1.33;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: var(--primary-brand);
+}
+.logo-studio {
+  margin-right: 77px;
+
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: var(--universal-color);
+}
+
+/* .top-page {
+  padding-top: 24px;
+  padding-bottom: 24px;
+} */
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-decoration: none;
+}
+.cont-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  min-height: 72px;
+}
+.cont-nav {
+  display: flex;
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 40px;
+}
+/* .nav-menu .menu-list:not(:last-child) {
+margin-left: 30px;
+} */
+
+.text-style {
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: inherit;
+}
+.menu-list:hover,
+.menu-list:focus {
+  color: var(--main-color-text);
+}
+.menu-list:active {
+  color: var(--primary-brand);
+}
+
+.text-top {
+  display: flex;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--main-color-text);
+}
+.text-top-efects,
+.text-top-efects {
+  color: var(--main-color-text);
+}
+.text-top-efects:hover,
+.text-top-efects:focus {
+  color: var(--primary-brand);
+}
+.top-link-margin {
+  margin-left: 40px;
+}
+
+/* --------/логотип і навігація--------- */
+
+/* ------оформлення секції герой ----------*/
+.hero-style {
+  background-color: var(--universal-color);
+  text-align: center;
+}
+.hero-case {
+  min-height: 603px;
+}
+.hero-title {
+  margin: 0 auto;
+  padding-top: 192px;
+  font-weight: 700;
+  font-size: 56px;
+  width: 496px;
+  line-height: 1.07;
+  /* text-align: center; */
+  color: var(--color-secondary);
+}
+.main-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 48px;
+}
+
+.buttons-style {
+  min-width: 170px;
+  padding-top: 16px;
+  padding-right: 10px;
+  padding-bottom: 16px;
+  padding-left: 10px;
+  background: var(--primary-brand);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.19;
+  align-items: center;
+  letter-spacing: 0.04em;
+  color: var(--color-secondary);
+  cursor: pointer;
+}
+.buttons-style:hover,
+.buttons-style:focus {
+  background: var(--primary-brand);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+.buttons-style:active {
+  background: #404bbf;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  /* ------/оформлення секції герой ----------*/
+}
+/*  -------секція друга - основні переваги-------------*/
+
+.elements-place {
+  display: flex;
+  justify-content: space-between;
+}
+
+.place-of-space:not(:last-child) {
+  margin-right: 24px;
+}
+.subhead {
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+.main-content {
+  letter-spacing: 0.02em;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--main-color-text);
+}
+
+/*  --------/секція друга - основні переваги-------------*/
+
+/* для картинок задавати display: block, max-width: 100%, height: auto */
+/* ----------cекція третя - що ми робимо-------------- */
+.box-space {
+  padding-bottom: 120px;
+  padding-top: 120px;
+}
+.subtitle {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  margin-bottom: 72px;
+}
+.work-list {
+  display: flex;
+  justify-content: space-between;
+}
+.work-list-item {
+  flex-basis: calc((100% - 48px) / 3);
+}
+/* --------/cекція третя - що ми робимо-------------- */
+
+/*--------секція четверта - наша команда-----------*/
+.space {
+  padding-bottom: 120px;
+}
+.sub-subtitle {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.back-ceil {
+  background-color: var(--color-fon);
+}
+
+.data-team {
+  display: flex;
+  gap: 24px;
+}
+.back-pictures-phone {
+  flex-basis: calc((100% - 72px) / 4);
+  background-color: var(--color-secondary);
+}
+
+.text-describ {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--main-color-text);
+}
+
+/*--------/секція четверта - наша команда-----------*/
+
+/* -----------футер-------------- */
+
+.color-back-space {
+  background-color: var(--universal-color);
+  min-height: 310px;
+}
+
+
+.second-logo-color {
+  color: var(--color-fon);
+}
+.main-footer-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #e7e9fc;
+  min-width: 64px;
+
+}
+/* -----------/футер-------------- */
+
+/* ==================Portfolio======================= */
+
+/* -----------оформлення кнопок----------- */
+
+.filter-button {
+  background-color: var(--color-fon);
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--primary-brand);
+
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  background-color: var(--primary-brand);
+  color: var(--color-secondary);
+}
+/* -----------/оформлення кнопок----------- */
+
+/* ----------оформлення тексту до карток-------------*/
+.text-image {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--universal-color);
+}
+
+.subtext-image {
+  color: var(--main-color-text);
+}
+
+/* ----------/оформлення тексту до карток-------------*/
+
+/* ==================/Portfolio======================= */
